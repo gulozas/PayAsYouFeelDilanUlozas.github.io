@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoppers</title>
+    <link href="Css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3a7a3c; 
+            --secondary-color: #58392b; 
+            --light-color: #e4c7a3; 
+        }
+        body {
+            color: var(--secondary-color);
+            background-color: var(--light-color);
+        }
+        .navbar, footer {
+            background-color: var(--primary-color);
+            color: var(--light-color);
+        }
+        .btn-primary, .btn-primary:hover, .btn-primary:focus {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+        .card {
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .navbar-nav .nav-link {
+            transition: color 0.3s ease-in-out;
+        }
+        .navbar-nav .nav-link:hover {
+            color: var(--light-color);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="LogoFace.jpg" alt="Restaurant Logo" width="30" height="30">
+                Hoppers
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h2>Seasonal Specials</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="salad.jpg" class="card-img-top" alt="Special 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Fresh Garden Salad</h5>
+                        <p class="card-text">Crisp lettuce, cherry tomatoes, and cool cucumber slices are tossed with thinly sliced red onions and fresh garden herbs. Dressed in a light blend of extra virgin olive oil and balsamic vinegar, this salad is a perfect start to any meal, offering a crisp and refreshing taste of the garden.</p>
+                        <a href="#" class="btn btn-primary">More Info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <h2>Top Dishes</h2>
+        <div id="topDishesCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="ChickenW.jpg" class="d-block w-100" alt="Top Dish 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Fresh Chicken Wrap</h5>
+                        <p>This dish is a favorite among our guests.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="ChickpeaS.jpg" class="d-block w-100" alt="Top Dish 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Chickpea Soup</h5>
+                        <p>Another highly recommended choice.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#topDishesCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#topDishesCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container mt-4" id="menu">
+        <h2>Our Menu</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="burger.jpg" class="card-img-top" alt="Menu Item 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Veggie Bean Burger</h5>
+                        <p class="card-text">A beloved classic with our unique twist.</p>
+                        <a href="#" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="thai.jpg" class="card-img-top" alt="Menu Item 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Thai Red Curry</h5>
+                        <p class="card-text">Explore flavors of the East with this dish.</p>
+                        <a href="#" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="wings.jpg" class="card-img-top" alt="Menu Item 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Buffalo Wings</h5>
+                        <p class="card-text">Perfect for those who love a spicy kick.</p>
+                        <a href="#" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="cake.jpg" class="card-img-top" alt="Menu Item 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Hot Lava Cake</h5>
+                        <p class="card-text">A sweet treat to end your meal.</p>
+                        <a href="#" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <div class="container mt-4">
+        <h2>Visit Us</h2>
+        <p><strong>Address:</strong> 26 Honeydew Orchard, Bristol</p>
+        <p><strong>Opening Hours:</strong> Monday - Friday: 9 AM to 4 PM, Saturday - Sunday: 6 AM to 2 PM</p>
+    </div>
+
+    <div class="container mt-4">
+        <h2>Box Collection Point</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79533.85409303689!2d-2.6731174446247805!3d51.468567014765874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4871836681b3d861%3A0x8ee4b22e4b9ad71f!2sBristol!5e0!3m2!1sen!2suk!4v1714786257341!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <footer class="bg-light text-center text-lg-start mt-4">
+        <div class="text-center p-3" style="background-color: var(--primary-color);">
+            © 2023 Hoppers
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+    
+</body>
+</html>
